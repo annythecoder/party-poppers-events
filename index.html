@@ -76,10 +76,9 @@
         <div><p class="eyebrow gold">A LITTLE INSPIRATION</p><h2>Moments we've <em>made</em></h2></div>
         <p>A glimpse of the celebrations<br>we love being part of.</p>
       </div>
-      <div class="gallery-grid">
-        <figure class="gallery-main"><img src="assets/birthday-decoration.webp" alt="Pastel balloon arch birthday decoration"><figcaption>Birthday balloon decoration <span>✦</span></figcaption></figure>
-        <div class="gallery-note"><span class="big-star">✦</span><h3>Your celebration<br>could be next.</h3><p>Tell us your idea. Let's make it happen.</p><a class="button button-outline" href="https://wa.me/917738490294?text=Hi%20Party%20Poppers%20Events%2C%20I%20have%20an%20event%20idea.">Share your idea ↗</a></div>
-      </div>
+      <div class="gallery-masonry" id="gallery-grid" aria-live="polite"></div>
+      <div class="gallery-more"><button class="button button-outline" id="gallery-more" type="button">Load more photos ↓</button></div>
+      <div class="gallery-note"><span class="big-star">✦</span><h3>Your celebration could be next.</h3><p>Tell us your idea. Let's make it happen.</p><a class="button button-outline" href="https://wa.me/917738490294?text=Hi%20Party%20Poppers%20Events%2C%20I%20have%20an%20event%20idea.">Share your idea ↗</a></div>
     </section>
 
     <section class="cta-band">
@@ -100,6 +99,13 @@
   </footer>
 
   <a class="whatsapp-float" href="https://wa.me/917738490294?text=Hi%20Party%20Poppers%20Events%2C%20I%27d%20like%20to%20enquire." aria-label="Chat with Party Poppers Events on WhatsApp" target="_blank" rel="noopener">☏</a>
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Gallery viewer">
+    <button class="lb-btn lb-close" aria-label="Close">✕</button>
+    <button class="lb-btn lb-prev" aria-label="Previous">‹</button>
+    <div class="lb-stage"></div>
+    <button class="lb-btn lb-next" aria-label="Next">›</button>
+    <span class="lb-count"></span>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
